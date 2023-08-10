@@ -1,16 +1,16 @@
-// Programa de Invers„o de Elementos do vetor
+// Programa de Invers√£o de Elementos do vetor
 #include <stdio.h>
 #include <locale.h>
 
-// DeclaraÁ„o das Vari·veis
+// Declara√ß√£o das Vari√°veis
 int vetorOriginal[10];
 int vetorInvertido[10];
 int i = 0;
 
-// FunÁ„o Principal de ExecuÁ„o do Programa
+// Fun√ß√£o Principal de Execu√ß√£o do Programa
 int main () {
     setlocale(LC_ALL, "Portuguese");
-    // InicializaÁ„o de MemÛria
+    // Inicializa√ß√£o de Mem√≥ria
     for (i = 0; i < 10; i++) {
         vetorOriginal[i] = 0;
         vetorInvertido[i] = 0;
@@ -18,17 +18,17 @@ int main () {
 
     // Preenchimento do Vetor
     for (i = 0; i < 10; i++) {
-        printf("Digite o valor da posiÁ„o %d: ", i);
+        printf("Digite o valor da posi√ß√£o %d: ", i);
         scanf("%d", &vetorOriginal[i]);
     }
 
-    // Invers„o do Vetor
+    // Invers√£o do Vetor
     printf("\n");
     for (i = 9; i >= 0; i--) {
         vetorInvertido[9 - i] = vetorOriginal[i];
     }
 
-    // Impress„o dos Vetores
+    // Impress√£o dos Vetores
     printf("\n");
     for (i = 0; i < 10; i++) {
         printf("vetor [%d] = %d \n", i, vetorOriginal[i]);
